@@ -1,12 +1,13 @@
-function multiplyNumbers() {
-    let num1 = parseFloat(prompt("Enter first number:"));
-    let num2 = parseFloat(prompt("Enter second number:"));
-    
-    if (!isNaN(num1) && !isNaN(num2)) {
-        alert("Result: " + (num1 * num2));
-    } else {
-        alert("Please enter valid numbers.");
+class Multiplication {
+    constructor(num1, num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    calculate() {
+        return this.num1 * this.num2;
     }
 }
 
-multiplyNumbers();
+const multiply = new Multiplication(5, 10);
+console.log("Multiplication Result:", multiply.calculate());
