@@ -38,3 +38,4 @@ console.log("Addition Result:", add.calculate());
 
 const multiply = new Multiplication(5, 10);
 console.log("Multiplication Result:", multiply.calculate());
+fgvdf
